@@ -55,7 +55,7 @@ def start_report( userData ):
     outputFile = clone_word_file( f"./{constants.REPORT_FILE}", outputName := constants.OUTPUT_FILE( taskNumber ) )
 
     edit_word_file( outputName, "author", f"{userData.name} {userData.surname}" )
-    edit_word_file( outputName, "group_name", userData.groupNumber )
+    edit_word_file( outputName, "group_number", userData.groupNumber )
     edit_word_file( outputName, "task_number", taskNumber )
     edit_word_file( outputName, "task_title", taskTitle )
 
